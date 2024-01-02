@@ -1,0 +1,21 @@
+{
+  "name": "vite-ssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/newpanjing/vite-ssr.git",
+  "author": "武松 <599194993@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.0.2",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "pinia": "^2.1.7",
+    "vite": "^5.0.10",
+    "vue": "^3.4.3",
+    "vue-router": "^4.2.5"
+  }
+}
