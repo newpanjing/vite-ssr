@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 
 </script>
 
@@ -6,10 +6,11 @@
   <div>
     <router-link to="/">Home</router-link>|
     <router-link to="/about">About</router-link>
-    <router-view v-slot="{ Component }">
+    <router-view v-slot="{ Component,route }">
       <Suspense>
         <div>
-          <component :is="Component" />
+          {{route.path}}
+          <component :is="Component" :key="route.path"/>
         </div>
       </Suspense>
     </router-view>
